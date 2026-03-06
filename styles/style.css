@@ -1,0 +1,325 @@
+body {
+    background-color: lightblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav{
+    display : flex;
+    justify-content: space-between;
+    padding: 20pzx 60pz;
+    background-color: rgb(243, 233, 233);
+    position: sticky;
+    top: 0;
+}
+.menu a{
+    color: rgb(65, 36, 36);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 10px;
+}
+.menu a:hover {
+    color: rgb(170, 146, 12);
+}
+
+/* hero section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../images/banner.avif') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.hero p{
+     font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.hero button{
+    cursor: pointer;
+    background: rgb(20, 59, 32);
+    border: none;
+    font-size: 12px;
+    color: aliceblue;
+    padding: 10px;
+    transition: 0.3s;
+}
+.hero button:hover {
+    background: rgb(96, 143, 102);
+}
+
+/*hosts section*/
+.hosts {
+    padding: 60px;
+    text-align: center;
+}
+.hosts_list {
+    display : grid ;
+    grid-template-columns: repeat(3,1fr);
+    gap : 30px;
+    margin-top: 30px;
+}
+.host{
+    padding: 30px;
+    box-shadow: 0 4px 10px rgb(52, 94, 64);
+    border-radius: 10px;
+    text-align: center;
+    transition : 0.3s;
+}
+.host:hover{
+    transform: translateY(-10px);
+}
+.host .flag{
+    width: 100px;
+    height: auto;
+     border-radius: 10px;
+    border: 2px solid #ddd;
+
+}
+.host h3{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.host p{
+     font-size: 16px;
+    color: rgb(43, 63, 34);
+    font-family: 'Courier New', Courier, monospace;
+}
+.about{
+    padding: 60px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+/*teams,html*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+nav {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+nav .menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .menu a.active {
+    color: #ffcc00;
+}
+
+.teams {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../images/teambanner.webp') center/cover no-repeat;
+    padding: 200px 20px;
+    text-align: center;
+}
+
+.teams h2 {
+    color: whitesmoke;
+    margin-bottom: 40px;
+    font-family: cursive;
+}
+
+.groups-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.group-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.group-card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team img {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.team-card.fifa {
+    background: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #111;
+}
+
+
+/* Schedule Section */
+.schedule {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.schedule h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.stage {
+    margin-bottom: 50px;
+}
+
+.stage h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Match Card */
+.match {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.match:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.match-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.match-teams {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.match-teams .team {
+    font-weight: 600;
+}
+
+.match-teams .vs {
+    margin: 0 10px;
+    color: #555;
+}
+
+.match-group {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .match-teams {
+        font-size: 16px;
+    }
+}
+
+
+/*stadium*/
+/* Stadiums Page */
+.stadiums {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.stadiums h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.stadium-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.stadium-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stadium-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.stadium-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.stadium-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.stadium-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
